@@ -1,3 +1,8 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .navbar .navbar-brand {
   display: flex;
   margin-left: 5px;
@@ -502,3 +507,97 @@ nav .navbar-nav li a {
   letter-spacing: 0.05em;
   line-height: 1.5;
 }
+
+.row-b .col-b {
+  margin-top: -25px;
+  margin-left: -30px;
+}
+
+.speakers-wrap {
+  margin-top: 5rem;
+}
+.speakers .title {
+  font-size: 27px;
+  font-weight: 600;
+  color: #000000;
+  margin-left: 4rem;
+}
+
+.speakers-row {
+  margin: 3.5rem 0;
+}
+
+.speaker-img {
+  height: 12rem;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.speakers .row2 {
+  margin-top: 1.8rem;
+}
+.speakers-name {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.speakers-name .number {
+  font-size: 11px;
+  display: block;
+  color: #ffffff;
+}
+
+.speaker-info {
+  margin-top: 3.5rem;
+}
+.speakers-name .description {
+  font-size: 11px;
+  display: block;
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.speakers-name .name {
+  font-size: 24px;
+  display: block;
+  color: #ffffff;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.speakers-name p {
+  font-size: 14px;
+  display: block;
+  color: #ffffff;
+  line-height: 26px;
+  width: 65%;
+  font-family: Maison Neue;
+  margin-top: 7px;
+}
+
+.speakers .col-2 {
+  background-color: #01baba;
+}
+.speakers .speakers-container {
+  padding-left: 4rem;
+}
+
+.social-media {
+  margin-top: 6rem;
+}
+
+.socials {
+  height: 15px;
+  width: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* .row-b {
+  margin-top: -12px;
+  margin-left: -12px;
+} */
