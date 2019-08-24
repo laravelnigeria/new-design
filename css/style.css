@@ -851,17 +851,39 @@ nav .navbar-nav li a {
   text-align: center;
   margin-bottom: 2rem;
   margin: auto;
-  width: 65%;
+  width: 70%;
   line-height: 1.7;
 }
 
 .community .input-group {
-  width: 55%;
+  width: 90%;
   margin: 3rem auto 0 auto;
   border-radius: 100px;
   border: 1px solid transparent;
   padding: 2;
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  .community .input-group {
+    width: 55%;
+    margin: 3rem auto 0 auto;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    padding: 2;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .community .text {
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin: auto;
+    width: 65%;
+    line-height: 1.7;
+  }
 }
 
 .community .form-control {
@@ -901,11 +923,10 @@ nav .navbar-nav li a {
 }
 
 .text-wrap span {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   color: #000000;
-  display: block;
-  width: 70%;
+  display: inline-block;
 }
 
 .text-wrap div {
@@ -913,11 +934,15 @@ nav .navbar-nav li a {
 }
 
 .forward-arrow {
+  display: none;
+}
+
+.down-arrow {
   height: 25px;
   width: 30px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 1.5rem;
+  display: inline-block;
 }
 
 .video {
@@ -933,10 +958,12 @@ nav .navbar-nav li a {
   height: 100%;
   z-index: 2;
   display: flex;
+  margin-top: 3rem;
 }
 
-.conference-wrap .text-wrap {
-  padding-top: 10rem;
+.play-wrap {
+  display: flex;
+  justify-content: center;
 }
 
 .play-btn {
@@ -944,30 +971,115 @@ nav .navbar-nav li a {
   width: 4rem;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: auto -32px;
   position: absolute;
-  margin-top: 12rem;
+  margin-top: 15rem;
+}
+
+.conference-wrap .text-wrap {
+  padding-top: 7rem;
+}
+.conference-wrap .no-col {
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .conference-wrap .text-wrap {
+    padding-top: 10rem;
+  }
+  .text-wrap span {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+    display: inline-block;
+  }
+  .down-arrow {
+    height: 25px;
+    width: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+
+  .forward-arrow {
+    display: none;
+  }
+
+  .video .wrap {
+    margin-top: 3rem;
+  }
+
+  .play-wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .text-wrap .down-arrow {
+    display: none;
+  }
+
+  .text-wrap span {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+    display: block;
+    width: 95%;
+  }
+
+  .forward-arrow {
+    height: 25px;
+    width: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1.5rem;
+  }
+
+  .play-btn {
+    height: 4rem;
+    width: 4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto -32px;
+    position: absolute;
+    margin-top: 12rem;
+  }
+
+  .play-wrap {
+    display: block;
+  }
 }
 
 .sponsors h2 {
   font-size: 30px;
   color: #000000;
   font-weight: 600;
-  padding-left: 6rem;
+  padding-left: 2rem;
+  position: absolute;
+}
+
+.sponsor-green div {
+  height: 5px;
+  width: 106px;
+  background-color: rgba(1, 186, 186, 0.5);
+  display: inline-block;
+  margin-top: 21px;
+  margin-left: 120px;
 }
 
 .sponsors span {
   color: #363636;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
   display: block;
+  margin: 1.5rem 0 0 2rem;
 }
 .sponsors {
   background-color: #f8f8f8;
-  padding: 5rem 0;
+  padding: 5rem 0 1rem 0;
 }
 .sponsor-icons {
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 
 .sponsor-icons .sponsors-img {
@@ -976,6 +1088,55 @@ nav .navbar-nav li a {
   background-size: contain;
   background-repeat: no-repeat;
   margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .sponsors {
+    background-color: #f8f8f8;
+    padding: 5rem 0 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sponsors {
+    background-color: #f8f8f8;
+    padding: 5rem 0;
+  }
+
+  .sponsors h2 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 600;
+    padding-left: 6rem;
+  }
+
+  .sponsors span {
+    color: #363636;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+  }
+
+  .sponsors h2 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 600;
+    padding-left: 2rem;
+    position: absolute;
+  }
+
+  .sponsor-green div {
+    height: 5px;
+    width: 104px;
+    background-color: rgba(1, 186, 186, 0.5);
+    display: inline-block;
+    margin-top: 22px;
+    margin-left: 125px;
+  }
+
+  .sponsor-icons {
+    margin: 4rem 0;
+  }
 }
 
 .sponsor-icons .sponsor-col {
