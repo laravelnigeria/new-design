@@ -1,0 +1,16 @@
+.faqs-banner-wrapper {
+  background-color: rgba(0, 83, 83, 0.95);
+  height: 534px;
+}
+
+@media only screen and (min-width: 768px) {
+  .faqs-banner-wrapper {
+    height: 534px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .faqs-banner-wrapper {
+    height: 534px;
+  }
+}
