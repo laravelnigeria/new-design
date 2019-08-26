@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/faqs.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
+   
   </head>
   <body>
     <div class="faqs-banner-wrapper">
@@ -34,8 +35,8 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-            <a class="nav-link" href="#"
-                >FAQs <span class="sr-only">(current)</span></a
+            <a class="nav-link" href="#">
+                FAQs <span class="sr-only">(current)</span></a
             >
             </li>
             <li class="nav-item">
@@ -50,16 +51,73 @@
     </nav>
 
     <!--Banner area-->
-    <div class="faqs-title">
+    <div class="faqs-tittle">
       <h2>Frequently asked questions</h2>
+      <div class="faqs-green-div"></div>
     </div>
     </div>
+
+    <section class="question-wrap">
+      <div class="questions">
+        
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle change" type="button" data-toggle="dropdown">
+              <span>How To Share This Article?</span>
+            <span class="caret"></span></button>
+            <div class="dropdown-menu">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          
+          </div>
+
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle change" type="button" data-toggle="dropdown">
+            <span>How To Share This Article?</span>
+          <span class="caret"></span></button>
+          <div class="dropdown-menu">
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          
+        </div>
+        
+       
+       
+        
+      </div>
+    </section>
+
+    <section class="community">
+      <div class="community-wrap">
+        
+          <div class="community-img" style="background-image: url(./src/images/community.png);">
+            <div class="wrap">
+              <div class="community-invite">
+                <span class="join">Join the slack community</span>
+                <span class="text">Join the Laravel Nigeria’s slack channel and stay updated on new releases and features, guides, and case studies.
+                </span>
+                <form>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter email address"  aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">GET MY INVITE</button>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </section>
 
 
     <footer>
       <div class="footer-wrap">
         <div class="row">
-          <div class="col-lg-3 col-md-12">
+          <div class="col-lg-3 col-md-12 footer-logo-wrap">
             <div
               class="footer-logo"
               style="background-image: url(./src/icons/logo2.png);"
@@ -103,7 +161,10 @@
       </div>
     </footer>
 
+    
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
   </body>
 </html>

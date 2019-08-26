@@ -3,9 +3,38 @@
   height: 534px;
 }
 
+.faqs-banner-wrapper h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  width: 85%;
+  margin: 5rem auto 0rem auto;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.faqs-green-div {
+  width: 35px;
+  height: 5px;
+  background-color: #01baba;
+  border-radius: 100px;
+  display: block;
+  margin: 15px auto;
+}
+
 @media only screen and (min-width: 768px) {
   .faqs-banner-wrapper {
     height: 534px;
+  }
+
+  .faqs-banner-wrapper h2 {
+    font-size: 52px;
+    width: 80%;
+    margin: 5rem auto 0rem auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5;
   }
 }
 
@@ -13,4 +42,74 @@
   .faqs-banner-wrapper {
     height: 534px;
   }
+
+  .faqs-banner-wrapper h2 {
+    font-size: 52px;
+    width: 50%;
+    margin: 5rem auto 0rem auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}
+
+.caret.caret-up {
+  border-top-width: 0;
+  border-bottom: 7px solid #fff;
+  transform: rotate(90deg);
+}
+
+.questions {
+  width: 75%;
+  background-color: #fff;
+  margin: -5rem auto 6rem auto;
+  display: block;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  padding: 2rem 0;
+}
+
+.dropdown {
+  margin: 1rem auto;
+  width: 85%;
+}
+
+.dropdown-toggle {
+  width: 100%;
+}
+
+.questions .btn-primary {
+  background-color: #f8f8f8;
+  color: #333333;
+  border-color: #f8f8f8 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.btn-primary:hover {
+  background-color: #f8f8f8 !important;
+  color: rgba(0, 0, 0, 0.2) !important;
+  border-color: #f8f8f8 !important;
+}
+
+.show > .btn-primary.dropdown-toggle {
+  background-color: #01baba !important;
+  color: #f8f8f8 !important;
+  border-color: transparent !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.dropdown-toggle::after {
+  margin: auto 0.0255em;
+}
+
+.dropdown-menu.show {
+  width: 100%;
+}
+
+.dropdown-menu.show p {
+  width: 90%;
+  margin: auto;
+  font-size: 14px;
 }
