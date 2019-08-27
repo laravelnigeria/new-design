@@ -1,6 +1,6 @@
 .faqs-banner-wrapper {
   background-color: rgba(0, 83, 83, 0.95);
-  height: 534px;
+  height: 430px;
 }
 
 .faqs-banner-wrapper h2 {
@@ -46,25 +46,46 @@
   .faqs-banner-wrapper h2 {
     font-size: 52px;
     width: 50%;
-    margin: 5rem auto 0rem auto;
+    margin: 8rem auto 0rem auto;
     text-transform: uppercase;
     font-weight: 600;
     line-height: 1.5;
   }
 }
 
-#first-dropdown.dropdown.show.dropdown-toggle::after {
+#first-dropdown.dropdown.show .dropdown-toggle::after {
   transform: rotate(180deg);
 }
 
-.questions {
-  width: 75%;
+.white-wrap {
+  width: 85%;
   background-color: #fff;
   margin: -5rem auto 6rem auto;
   display: block;
   justify-content: center;
   border-radius: 10px 10px 0px 0px;
   padding: 2rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .white-wrap {
+    width: 85%;
+  }
+
+  .white-wrap {
+    background-color: #fff;
+    margin: -5rem auto 6rem auto;
+    display: block;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    padding: 2rem 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .white-wrap {
+    width: 75%;
+  }
 }
 
 .dropdown {
@@ -76,7 +97,7 @@
   width: 100%;
 }
 
-.questions .btn-primary {
+.white-wrap .btn-primary {
   background-color: #f8f8f8;
   color: #333333;
   border-color: #f8f8f8 !important;
@@ -110,4 +131,16 @@
   width: 90%;
   margin: auto;
   font-size: 14px;
+}
+
+.conducts {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.conducts p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 20px;
 }
