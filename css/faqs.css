@@ -45,7 +45,7 @@
 
   .faqs-banner-wrapper h2 {
     font-size: 52px;
-    width: 50%;
+    width: 65%;
     margin: 8rem auto 0rem auto;
     text-transform: uppercase;
     font-weight: 600;
@@ -58,7 +58,7 @@
 }
 
 .white-wrap {
-  width: 85%;
+  width: 90%;
   background-color: #fff;
   margin: -5rem auto 6rem auto;
   display: block;
@@ -150,6 +150,7 @@
   font-size: 12px;
   color: #979797;
   float: left;
+  margin-left: 15px;
 }
 
 .schedule {
@@ -169,10 +170,28 @@
 
 .activity-title {
   display: block;
-  font-size: 22px;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
 
+  width: 65%;
+}
+
+.talk {
+  display: block;
+  float: right;
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(1, 186, 186, 0.8);
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.activity-title-talk {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
   width: 65%;
 }
 
@@ -184,10 +203,42 @@
 .two {
   background-color: #e7eaf0;
 }
+
 .speaker {
   font-size: 12px;
 }
 .double-lines {
   font-size: 14px;
   margin: 0 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .activity-title {
+    font-size: 22px;
+    width: 65%;
+  }
+  .activity-title-talk {
+    font-size: 22px;
+    width: 65%;
+  }
+
+  .activity {
+    margin: 0 15px;
+
+    width: 90%;
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: rgba(1, 186, 186, 0.2);
+  }
+
+  .time {
+    display: inline-block;
+    font-size: 12px;
+    color: #979797;
+    float: left;
+  }
+
+  .two {
+    background-color: #e7eaf0;
+  }
 }
