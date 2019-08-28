@@ -29,7 +29,31 @@ nav .navbar-nav {
 nav .navbar-nav li a {
   color: white !important;
   font-size: 14px;
+  opacity: 0.6;
   padding: 0.5rem 1.1rem !important;
+  transition: 0.3s ease;
+}
+
+nav .navbar-nav li {
+  position: relative;
+}
+
+nav .navbar-nav li .dots {
+  color: transparent;
+  top: 65%;
+  text-align: center;
+  display: block;
+  left: 45%;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+
+nav .navbar-nav li a:hover {
+  opacity: 1;
+}
+
+#dot-trigger:hover ~ #dots {
+  color: #ffffff;
 }
 
 .navbar {
