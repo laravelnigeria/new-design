@@ -207,12 +207,24 @@ nav .navbar-nav li a:hover {
 .ticket-button span {
   font-size: 16px;
   color: #ffffff;
-  line-height: 2.6;
+
   text-align: center;
   letter-spacing: 1px;
   display: block;
   text-transform: uppercase;
-  padding: 0 5px;
+  margin: auto;
+  padding: 5px;
+}
+
+.wrap .community-invite .form-control:focus {
+  box-shadow: none !important;
+  border-top: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+}
+
+.input-group > .form-control {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .ticket-button {
@@ -238,6 +250,7 @@ nav .navbar-nav li a:hover {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     text-align: left;
+    margin: 0;
   }
 
   .banner-container .row .col-lg-7 {
@@ -599,7 +612,7 @@ nav .navbar-nav li a:hover {
   height: 100%;
   width: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .img2 {
@@ -607,7 +620,7 @@ nav .navbar-nav li a:hover {
   height: 100%;
   width: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .sec-three .row {
@@ -791,6 +804,10 @@ nav .navbar-nav li a:hover {
     background-repeat: no-repeat;
   }
 
+  .speaker-img:hover {
+    border-bottom: 5px solid #01baba;
+  }
+
   .speakers .row-two {
     padding: 0;
   }
@@ -970,7 +987,7 @@ nav .navbar-nav li a:hover {
 }
 
 .video {
-  height: 26rem;
+  height: 38rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1029,12 +1046,16 @@ nav .navbar-nav li a:hover {
   }
 
   .video .wrap {
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
 
   .play-wrap {
     display: flex;
     justify-content: center;
+  }
+
+  .text-wrap div {
+    width: 63%;
   }
 }
 
@@ -1060,17 +1081,22 @@ nav .navbar-nav li a:hover {
   }
 
   .play-btn {
-    height: 4rem;
-    width: 4rem;
+    height: 6rem;
+    width: 6rem;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: auto -32px;
+    margin: auto -48px;
     position: absolute;
-    margin-top: 12rem;
+    margin-top: 15rem;
   }
 
   .play-wrap {
     display: block;
+  }
+
+  .text-wrap {
+    display: flex;
+    justify-content: left;
   }
 }
 
@@ -1178,8 +1204,8 @@ nav .navbar-nav li a:hover {
 }
 
 .footer-logo {
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
   background-size: contain;
   background-repeat: no-repeat;
   margin: auto;
