@@ -173,13 +173,13 @@
           <div class="row no-row">
             <div class="col-12 col-lg-8">
               <div class="row no-row">
-                <div class="col-6 col-lg-4 pic-col">
+                <div class="col-6 col-lg-4 pic-col" id="speaker1" >
                   <div class="speaker-img" style="background-image: url(./src/images/speaker1.png);"></div>
                 </div>
                 <div class="col-6 col-lg-4 pic-col">
-                  <div class="speaker-img" style="background-image: url(./src/images/speaker2.png);"></div>
+                  <div class="speaker-img" id="speaker2" style="background-image: url(./src/images/speaker2.png);"></div>
                 </div>
-                <div class="col-6 col-lg-4 pic-col">
+                <div class="col-6 col-lg-4 pic-col" id="speaker3">
                   <div class="speaker-img" style="background-image: url(./src/images/speaker4.png);"></div>
                 </div>
 
@@ -197,26 +197,49 @@
               </div>
   
             </div>
+            <div id="modal-background"></div>
+            <div id="modal-content">
+                <button class="btn btn-primary" id="modal-close">X</button>
 
-            <div class=" col-12 col-lg-4 no-col">
+                
+            </div>​
+
+
+            <div class=" col-12 col-lg-4 no-col info-background">
               <div class="row row-two no-row">
                 <div class="col-two col-12">
-                  <div class="speakers-name">
-                    <span class="number"> 03 / 06</span>
-                    <div class="speaker-info">
-                      <span class="description"> Developer</span>
-                      <span class="name">Michael Brenz</span>
-                      <p>“Art is not a handicraft, it is the transmission of feeling the artist has experienced.”
-                      </p>
-                    </div>
+                  <div>
+                    <div class="speakers-name">
+                      <span class="number"id="number"> </span>
+                      <div class="speaker-info">
+                        <span class="description" id="description"> </span>
+                        <span class="name" id="name"></span>
+                        <p id="speakers-text">
+                        </p>
+                      </div>
 
-                    <div class="social-media">
-                      <div class=" socials git-hub" style="background-image: url(./src/icons/git.png);"></div>
-                      <div class="socials facebook" style="background-image: url(./src/icons/facebook.png);"></div>
-                      <div class="socials twitter" style="background-image: url(./src/icons/twitter.png);"></div>
-                    </div>
+                      <div class="social-media">
+                        <div class="social-wraps">
+                          <a href="#" class="speaker-link" id="speaker-github">
+                            <div class=" socials git-hub" style="background-image: url(./src/icons/git.png);"></div>
+                          </a>
 
+                          <a href="#" class="speaker-link" id=" speaker-facebook">
+                            <div class="socials facebook" style="background-image: url(./src/icons/facebook.png);"></div>
+                          </a>
+
+                          <a href="#"class="speaker-link" id="speaker-twitter">
+                            <div class="socials twitter" style="background-image: url(./src/icons/twitter.png);"></div>
+                          </a>
+                          
+                          
+                        </div>
+                        
+                      </div>
+
+                    </div>
                   </div>
+                  
                 </div>
               </div>
               
@@ -229,6 +252,8 @@
       </div>
     </section>
 
+
+    
 
     <section class="community">
       <div class="community-wrap">
@@ -309,6 +334,7 @@
                 <div class="row no-row">
                   <div class="col-6 col-lg-3 col-md-3 sponsor-col">
                     <div class="sponsors-img" style="background-image: url(./src/logos/Logo1.png);"></div>
+
                   </div>
                   <div class="col-6 col-lg-3 col-md-3  sponsor-col">
                     <div class="sponsors-img" style="background-image: url(./src/logos/Logo2.png);"></div>
@@ -386,5 +412,6 @@
     <!--Navbar-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
