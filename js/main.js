@@ -59,3 +59,75 @@ if ($(window).width() <= 700) {
     });
   });
 }
+
+$("#sponsor1").hover(
+  function() {
+    $(this).css("background-image", "url(./src/logos/logo1-dark.png)");
+  },
+  function() {
+    $(this).css("background-image", "url(./src/logos/Logo1.png)");
+  }
+);
+
+$("#sponsor2").hover(
+  function() {
+    $(this).css("background-image", "url(./src/logos/logo2-dark.png)");
+  },
+  function() {
+    $(this).css("background-image", "url(./src/logos/Logo2.png)");
+  }
+);
+
+$("#sponsor3").hover(
+  function() {
+    $(this).css("background-image", "url(./src/logos/logo3-dark.png)");
+  },
+  function() {
+    $(this).css("background-image", "url(./src/logos/Logo3.png)");
+  }
+);
+
+$("#sponsor4").hover(
+  function() {
+    $(this).css("background-image", "url(./src/logos/logo4-dark.png)");
+  },
+  function() {
+    $(this).css("background-image", "url(./src/logos/Logo4.png)");
+  }
+);
+
+$("#sponsor5").hover(
+  function() {
+    $(this).css("background-image", "url(./src/logos/logo5-dark.png)");
+  },
+  function() {
+    $(this).css("background-image", "url(./src/logos/Logo5.png)");
+  }
+);
+
+$("#sponsor6").hover(
+  function() {
+    $(this).css("background-image", "url(./src/logos/logo6-dark.png)");
+  },
+  function() {
+    $(this).css("background-image", "url(./src/logos/Logo6.png)");
+  }
+);
+
+$("#sponsor7").hover(
+  function() {
+    $(this).css("background-image", "url(./src/logos/logo7-dark.png)");
+  },
+  function() {
+    $(this).css("background-image", "url(./src/logos/Logo7.png)");
+  }
+);
+
+$("#sponsor8").hover(
+  function() {
+    $(this).css("background-image", "url(./src/logos/logo8-dark.png)");
+  },
+  function() {
+    $(this).css("background-image", "url(./src/logos/Logo8.png)");
+  }
+);
