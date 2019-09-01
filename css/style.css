@@ -738,7 +738,7 @@ nav .navbar-nav li a:hover {
   margin-top: 1.8rem;
 }
 .speakers-name {
-  padding: 3rem 0 2rem 2rem;
+  padding: 1rem 0 0rem 2rem;
 }
 
 .speakers-name .number {
@@ -752,7 +752,7 @@ nav .navbar-nav li a:hover {
 }
 
 .speaker-info {
-  margin-top: 3.5rem;
+  margin-top: 20px;
 }
 .speakers-name .description {
   font-size: 11px;
@@ -774,7 +774,7 @@ nav .navbar-nav li a:hover {
   display: block;
   color: #ffffff;
   line-height: 26px;
-  width: 65%;
+  width: 95%;
   font-family: Maison Neue;
   margin-top: 7px;
 }
@@ -837,6 +837,14 @@ nav .navbar-nav li a:hover {
   .speakers-name {
     padding: 3rem 0 4rem 2rem;
   }
+
+  .speaker-info {
+    margin-top: 3.5rem;
+  }
+
+  .speakers-name p {
+    weight: 65%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -857,10 +865,14 @@ nav .navbar-nav li a:hover {
   .speakers-name {
     padding: 3rem 0 0rem 2rem;
   }
+
+  .speaker-info {
+    margin-top: 3.5rem;
+  }
 }
 
 .social-media {
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 .socials {
@@ -942,6 +954,10 @@ nav .navbar-nav li a:hover {
     margin: auto;
     width: 65%;
     line-height: 1.7;
+  }
+
+  .social-media {
+    margin-top: 6rem;
   }
 }
 
@@ -1341,7 +1357,7 @@ footer span {
   -webkit-box-shadow: 0 0 20px 0 #222;
   -moz-box-shadow: 0 0 20px 0 #222;
   display: none;
-  height: 340px;
+  height: 430px;
   left: 50%;
   margin: -120px 0 0 -160px;
   padding: 10px;
@@ -1366,4 +1382,27 @@ footer span {
   border-radius: 50px;
   border-color: #000000;
   float: right;
+}
+
+.modal-btn {
+  position: absolute;
+  right: -3%;
+  top: -3%;
+}
+
+.mobile-number {
+  color: #ffffff;
+}
+
+.mobile-description {
+  color: #ffffff;
+  display: block;
+}
+
+.mobile-name {
+  color: #ffffff;
+  display: block;
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 22px;
 }
